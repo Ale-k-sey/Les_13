@@ -1,0 +1,166 @@
+body{
+    background-image: none;
+    background-color: rgb(197, 184, 184);
+}
+
+/* Button_____ */
+
+.button__exsample .btn-primary{
+    color: black;
+    background-color: brown;
+    border-color: brown;
+}
+
+.button__exsample .btn-secondary-mod{
+    display: block;
+    width: 100%;
+
+    font-weight: 700;    
+}
+
+.button__exsample .btn-link-mod{
+    color: black;
+
+    font-weight: 900;
+    font-style: italic;
+}
+
+.button__outline-buttons .btn-outline-secondary{
+    border-color: black;
+    color: black;
+
+    width: 50%;
+
+    font-style: italic;
+}
+
+.button__outline-buttons .btn-outline-primary{
+    color: yellow;
+    border-color: yellow;
+
+    padding: 20px;
+    margin-right: 100px;
+
+    font-weight: bold;
+}
+
+/* Range______ */
+
+.range__Example-range .form-label{
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold;
+
+    position: relative;
+    left: 200px;
+    top: 0;
+}
+
+.range__Example-range .form-range{
+    display: block;
+    width: 50%;
+    height: 2rem;   
+}
+
+/* Akkordion______ */
+
+.accordion{
+    width: 50%;
+}
+
+.accordion-button{
+    font-style: italic;
+    font-weight: bold;
+
+    background-color: greenyellow;
+}
+
+.accordion-button::after{
+    content: "x";
+    background-image: none;
+}
+
+.accordion-button:not(.collapsed)::after{
+    content: "x";
+    background-image: none;
+}
+
+.accordion-body{
+    background-color: aqua;
+}
+
+/* Alert_____ */
+
+.alerts__link-color .alert-primary{
+    width: 70%;
+
+    background-color: bisque;
+    border: 2px solid brown;
+    color: black;
+
+    font-weight: bold;
+    font-style: italic;
+}
+
+.alerts__link-color .alert-link-mod{
+    font-style: normal;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.alerts__link-color .alert-secondary{
+    width: 30%;
+
+    position: relative;
+    left: 70%;
+    top: 0;
+}
+
+.alerts__icons .alert-primary{
+    justify-content: right;
+}
+
+/* Dropdown______ */
+
+.dropdown__single-button .btn-secondary{
+    position: static;
+    display: block;
+    margin: 0 auto;
+
+    background-color: bisque;
+    color: black;
+}
+
+.dropdown__single-button .dropdown-menu{
+    background-color: aquamarine;
+
+    font-style: italic;
+}
+
+.dropdown__single-button .dropdown-item-mod{
+    font-weight: bold;
+}
+
+.btn-group {
+    width: 40%;
+}
+
+.btn-group .btn-danger{
+    width: 80%;
+}
+
+
+/* bstp-template________ */
+
+.container-xxl {
+    background-color: var(--bs-white);
+    padding: 5px;
+}
+
+.row {
+    background-color: var(--bs-gray);   
+}
+
+.sect-mod {
+    background-color: var(--bs-gray-dark);   
+}

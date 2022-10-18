@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form</title>
+</head>
+<body style="background-image: none; background-color: white;">
+    <header style="background-color: rgb(10, 10, 10);" class="wrapper header__wrapper">
+        <div class="header__logo">
+            <a href="index.html" class="logo__link">
+                <img src="img/logo.svg" alt="logopicture" class="logo_image">
+            </a>
+        </div>
+        <nav class="header__navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">Work</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="about.html" class="navigation__link">About</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">Contact</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="flex.html" class="navigation__link">Flex-box</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="table.html" class="navigation__link">Table</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="position.html" class="navigation__link">Position</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="catalog.html" class="navigation__link">Catalog</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="bootstrap-exsample.html" class="navigation__link">Bootstrap-exsample</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="nth-child.html" class="navigation__link">Nth-child</a>
+                </li>
+            </ul>
+        </nav>
+    </header> 
+    <main>
+        <div class="container form-container">
+            <h2>Ввод номера телефона</h2>
+            <form class="template-form" action="">
+                <div class="form-row">             
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br>          
+                </div>
+                <div class="form-row">                    
+                    <label for="phone">Phone:</label><br>
+                    <input class="phone" type="tel" id="phone" name="phone" >  
+                </div>                
+                <div class="form-row">
+                    <input class="submit" type="submit" value="Отправить"><br>
+                    <input class="closed" type="button" value="Закрыть">                    
+                </div>
+                <div class="form-row form-row-select">
+                    <label for="cars">Choose a letter:</label>
+
+                    <select name="letter" id="letter">
+                      <option value="A">A</option>
+                      <option value="B">B</option>
+                      <option value="C">C</option>
+                      <option value="D">D</option>
+                      <option value="E">E</option>
+                      <option value="F">F</option>
+                    </select> 
+                    <br>
+                    <br>
+                </div>
+                
+            </form>             
+          </div>
+          <br><br><br><br><br><br><br><br><br><br><br>
+          <div class="container">
+            <h2>Form-2 input max</h2>
+            <form class="form-input" action="">
+                <div class="form-item">
+                    <h5>Input Type Text</h5>
+                    <label for="fname">First name:</label>
+                    <input class="fname" type="text" id="fname" name="fname">
+                </div>
+                <hr>
+                <div class="form-item">
+                    <h5>Input Type Password+Submit+Reset</h5>
+                    <label for="username">Username:</label><br>
+                    <input type="text" id="username" name="username"><br>
+                    <label for="pwd">Password:</label><br>
+                    <input type="password" id="pwd" name="pwd">
+
+                    <input class="submit" type="submit" value="Submit">
+
+                    <input class="reset" type="reset" value="Сбросить">
+                </div>
+                <hr>
+                <div class="form-item">
+                    <h5>Input Type Radio</h5>
+                    <div class="radio">
+                        <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="html">HTML</label>
+                    <input type="radio" id="css" name="fav_language" value="CSS">
+                    <label for="css">CSS</label>
+                    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                    <label for="javascript">JavaScript</label>
+                    <input type="radio" id="c" name="fav_language" value="C++">
+                    <label for="javascript">C++</label>
+                    </div>                    
+                </div>
+                <hr>
+                <div class="form-item">
+                    <h5>Input Type Checkbox</h5>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> I have a bike</label>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> I have a car</label>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Moped">
+                    <label for="vehicle3"> I have a moped</label>
+                </div>
+                <hr>
+                <div class="form-item">
+                    <h5>Input Type Button</h5>
+                    <input type="button" onclick="alert('Hello World!')" value="Button!!!"> 
+                </div>
+                <hr>
+                <div class="form-item">
+                    <h5>Input Type Date</h5>
+                    <label for="birthday">Date:</label>
+                    <input type="date" id="birthday" name="birthday">
+                </div>
+                <hr>
+                <div class="form-item">
+                    <h5>Input Type Datetime-local</h5>
+                    <label for="birthdaytime">Дата и время:</label>
+                    <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+                </div>
+                <hr>                
+                <div class="form-item">
+                    <h5>Input Type Month</h5>
+                    <label for="bdaymonth">Birthday (month and year):</label>
+                    <input type="month" id="bdaymonth" name="bdaymonth">
+                </div>
+                <hr> 
+                <div class="form-item">
+                    <h5>Input Type Time</h5>
+                    <label for="appt">Select a time:</label>
+                    <input type="time" id="appt" name="appt">
+                </div>
+                <hr> 
+                <div class="form-item">
+                    <h5>Input Type Week</h5>
+                    <label for="week">Select a week:</label>
+                    <input type="week" id="week" name="week">
+                </div>
+                <hr>              
+                <div class="form-item">
+                    <h5>Input Type Email</h5>
+                    <label for="email">Enter your email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <hr>
+                <div class="form-item">
+                    <h5>Input Type Image</h5>
+                    <input type="image" src="/img/Ntn-child/Cartman-sp.gif" alt="Submit" width="48" height="48">
+                </div>
+                <hr>
+                <div class="form-item">
+                    <h5>Input Type File</h5>
+                    <label for="myfile">Select a file:</label>
+                    <input type="file" id="myfile" name="myfile">
+                </div>
+                <hr>
+                <div class="form-item">
+                    <h5>Input Type Hidden</h5>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <input type="hidden" id="custId" name="custId" value="3487">
+                    <input type="submit" value="Submit">
+                </div>
+                <hr>
+                <div class="form-item">
+                    <h5>Input Type Number</h5>
+                    <label for="quantity">Quantity (between 1 and 5):</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="5">
+                </div>
+                <hr>
+                <div class="form-item">
+                    <h5>Input Restrictions</h5>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30">
+                </div>
+                <hr>
+                <div class="form-item">
+                    <h5>Input Type Range</h5>
+                    <label for="vol">Volume (between 0 and 50):</label>
+                    <input type="range" id="vol" name="vol" min="0" max="50">
+                </div>
+                <hr>
+                <div class="form-item">
+                    <h5>Input Type Search</h5>
+                    <label for="gsearch">Search Google:</label>
+                    <input type="search" id="gsearch" name="gsearch">
+                </div>
+                <hr>
+                <div class="form-item">
+                    <h5>Input Type Tel</h5>
+                    <label for="phone">Enter your phone number:</label>
+                    <input class="tel-num" type="tel" id="phone" name="phone">
+                </div>
+                <hr>
+                <div class="form-item">
+                    <h5>Input Type Url</h5>
+                    <label for="homepage">Add your homepage:</label>
+                    <input type="url" id="homepage" name="homepage">
+                </div>
+                <hr>
+                <div class="form-item">
+                    <h5>Input type color</h5>
+                    <label for="favcolor">Select your favorite color:</label>
+                    <input class="color" type="color" id="favcolor" name="favcolor" value="#ff0000"> 
+                </div>
+                <hr>
+                <div class="form-item">
+                    <h5>Input type textarea</h5>
+                    <label for="w3review">Review of W3Schools:</label>
+                    <textarea id="w3review" name="w3review" rows="1" cols="50">                    
+                    </textarea> 
+                </div>
+                <hr>
+            </form>
+          </div>           
+    </main>
+    <script src="JS/jquery-3.6.1.min.js"></script>
+    <script src="JS/jquery.mask.min.js"></script> 
+    <script src="JS/jquery.nice-select.min.js"></script>
+    <script src="JS/script.js"></script>
+
+    <script src="JS/bootstrap-5.min.js"></script>  
+</body>
+</html>

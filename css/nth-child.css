@@ -1,0 +1,103 @@
+
+.child_item{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(141, 26, 26);
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+}
+
+.first-child .child_item:first-child{
+    background-color: aquamarine;
+}
+
+.last-child .child_item:last-child{
+    background-color: rgb(117, 189, 24);
+    color: blue;
+}
+
+.ntn-child-4 .child_item:nth-child(5){
+    background-color:gray;
+    border: 12px solid black;
+}
+
+.ntn-child-odd .child_item:nth-child(odd){
+    background-color:rgb(158, 22, 126);
+    
+}
+
+.ntn-child-even .child_item:nth-child(even){
+    background-color:rgb(51, 151, 179);    
+}
+
+.ntn-child-3n .child_item:nth-child(3n){
+    background-color:rgb(110, 181, 28);
+    font-style: italic;    
+}
+
+.ntn-child-3n-plus-7 .child_item:nth-child(3n+7){
+    background-color:rgb(37, 17, 129);
+    font-style: bold;    
+}
+
+.ntn-child-minus-3n-plus-20 .child_item:nth-child(-3n+20){
+    background-color:rgb(156, 164, 111);
+    font-style: italic;    
+}
+
+/* Part 2______________ */
+
+.exsample-2{
+    background-color: bisque;
+}
+
+.person{
+    width: 14%;
+    margin: 5px;
+}
+
+.person-img{
+    
+    width: 100%;
+}
+
+.person:first-child{
+    background-color: aqua;
+    height: 100%;
+    border: 2px solid black;
+}
+
+.person:last-child{
+    background-color: rgb(50, 167, 24);
+    height: 100%;
+    width: 20%;
+    border: 2px dashed black;
+}
+
+.person:nth-child(2){
+    padding: 0 5px;
+    background-color: blueviolet;
+    width: 17%;
+    height: 100%;
+}
+
+.person.person:nth-child(3n){
+    padding: 0 7px;
+    background-color: rgb(162, 91, 25);    
+    height: 100%;
+}
+
+.person.person:nth-child(4n+4){    
+    background-color: rgb(141, 167, 38); 
+    padding: 0 2px;   
+    height: 100%;
+}
+
+.person:hover{
+    width: 25%;
+}

@@ -1,0 +1,22 @@
+/* Transform-prop___ */
+
+.transform-default{
+    width: 295px;
+    height: 300px;
+}
+
+.transform-translate{
+    transform: rotate(-90deg) translate(46px, 260px);
+}
+
+.transform-scale{
+    transform: scale(1 , 0.5);
+}
+
+.transform-rotate{
+    transform: rotate(0.8turn);
+}
+
+.transform-skew{
+    transform: skew(30deg, 20deg);
+}
