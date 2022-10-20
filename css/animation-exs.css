@@ -20,3 +20,67 @@
 .transform-skew{
     transform: skew(30deg, 20deg);
 }
+
+/* Keyframes_______ */
+
+.keyframes-translate {
+    animation-duration: 3s;
+    animation-name: Kenny-translate;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+
+@keyframes Kenny-translate {
+    from {
+      transform: translateX(0%);
+    }
+  
+    to {
+      transform: translateX(80%);
+    }
+  }
+
+.keyframes-scale{
+    animation-duration: 5s;
+    animation-name: Kenny-scale;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Kenny-scale {
+    from {
+      transform: scale(1, 1);
+    }
+  
+    to {
+      transform: scale(0.2, 0.8);
+    }
+  }
+
+.keyframes-rotate{ 
+    animation: 9s infinite Kenny-rotate;
+}
+
+@keyframes Kenny-rotate {
+    from {
+      transform: rotate(-0.1turn);
+    }
+  
+    to {
+      transform: rotate(0turn);
+    }
+  }
+
+  .keyframes-skew{     
+    animation: 5s infinite Kenny-skew;
+}
+
+@keyframes Kenny-skew {
+    from {
+      transform: skew(0deg, 0deg);
+    }
+  
+    to {
+      transform: skew(10deg, 20deg);
+    }
+  }
