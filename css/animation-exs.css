@@ -71,7 +71,9 @@
     }
   }
 
-  .keyframes-skew{     
+  .keyframes-skew{ 
+    /* display: inline-block; */
+    margin-left: 900px;    
     animation: 5s infinite Kenny-skew;
 }
 
@@ -84,3 +86,109 @@
       transform: skew(10deg, 20deg);
     }
   }
+
+  /* backgroundcolor animation___ */
+
+  
+  .bgcl-change{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    margin: 0 auto;
+
+    animation: 5s infinite bg-cg-r-g;
+  }
+
+  
+
+
+@keyframes bg-cg-r-g {
+  0% {background-color: brown;}
+  25% {background-color: rgb(37, 172, 46);}
+  50% {background-color: rgb(40, 158, 194);}
+  100% {background-color: rgb(212, 51, 180);}
+  }
+
+/* Sprites________ */
+
+.social-netvork nav{
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+.social-netvork li{
+    
+    list-style: none;
+    width: 84px;
+    height: 84px;
+    background-image: url(/img/Sprites/Social-netv.png);
+    /* border: 1px solid black; */
+}
+
+.fb:hover{
+  background-position-y: -84px;
+}
+
+.g{
+  background-position-x: -251px;
+}
+
+.g:hover{
+  
+  background-position-y: -84px;
+}
+
+.ld{
+  background-position-x: -335.5px;
+}
+
+.ld:hover{
+  
+  background-position-y: -84px;
+}
+
+.tw{
+  background-position-x: -672px;
+}
+
+.tw:hover{
+  background-position-y: -84px;
+}
+
+.sk{
+  background-position-x: -590px;
+}
+
+.sk:hover{
+  background-position-y: -84px;
+}
+
+.yt{
+  background-position-x: -840px;
+}
+
+.yt:hover{
+  background-position-y: -84px;
+}
+
+/* animation-cat */
+
+.animation-cat{
+  width: 238px;
+  height: 152px;
+  border: 1px solid black;
+  background: url(/img/Sprites/Cat-vertical.jpg);
+  background-repeat: no-repeat;
+  animation: run-cat 0.5s steps(8) infinite;  
+}
+
+@keyframes run-cat{
+  0%{
+    background-position-y: 0;
+  }
+  100%{
+    background-position-y: -1217px;
+  }
+}
+
