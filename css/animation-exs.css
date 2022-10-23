@@ -192,3 +192,22 @@
   }
 }
 
+/* animation-man */
+
+.animation-man{
+  width: 252px;
+  height: 620px;
+  border: 1px solid black;
+  background: url(/img/Animation-img/man.jpg);
+  background-repeat: no-repeat;
+  animation: run-man 0.5s steps(5) infinite;  
+}
+
+@keyframes run-man{
+  0%{
+    background-position-x: 0;
+  }
+  100%{
+    background-position-x: -1170px;
+  }
+}
